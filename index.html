@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Cruds</title>
 </head>
+
 <body>
     <div class="crud">
         <div class="head">
@@ -13,17 +15,17 @@
             <p>pcreate read update seatch</p>
         </div>
         <div class="inputs">
-             <input placeholder="title" type="text" id="title">
-    <div class="price">
-        <input onkeyup="" type="number" id="price" placeholder="price">
-        <input onkeyup="" type="number" id="taxes" placeholder="taxes">
-        <input onkeyup="" type="number" id="ads" placeholder="ads">
-        <input onkeyup="" type="number" id="discount" placeholder="discount">
-        <small id="total">123456</small>
-    </div>
-    <input placeholder="count" type="number" id="count">
-    <input placeholder="category" type="text" id="category">
-    <button id="submit">Create</button>
+            <input placeholder="title" type="text" id="title">
+            <div class="price">
+                <input onkeyup="getTotal" type="number" id="price" placeholder="price">
+                <input onkeyup="getTotal" type="number" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal" type="number" id="discount" placeholder="discount">
+                <small id="total"></small>
+            </div>
+            <input placeholder="count" type="number" id="count">
+            <input placeholder="category" type="text" id="category">
+            <button id="submit">Create</button>
         </div>
         <div class="outputs">
 
@@ -46,7 +48,7 @@
                     <th>category</th>
                     <th>update</th>
                     <th>delete</th>
-                
+
                 </tr>
                 <tbody>
                     <tr>
@@ -100,6 +102,7 @@
 
 
     <script src="main.js"></script>
-    
+
 </body>
+
 </html>
